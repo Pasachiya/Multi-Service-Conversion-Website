@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "5000:5000"
+
+  file-upload-service:
+    build: ./file-upload-service
+    ports:
+      - "5001:5001"
+
+  document-conversion-service:
+    build: ./document-conversion-service
+    ports:
+      - "5002:5002"
+
+  image-conversion-service:
+    build: ./image-conversion-service
+    ports:
+      - "5003:5003"
+
+  background-removal-service:
+    build: ./background-removal-service
+    ports:
+      - "5004:5004"
+
+  ocr-service:
+    build: ./ocr-service
+    ports:
+      - "5005:5005"
+
+  pdf-operations-service:
+    build: ./pdf-operations-service
+    ports:
+      - "5006:5006"
+
+  file-format-identification-service:
+    build: ./file-format-identification-service
+    ports:
+      - "5007:5007"
